@@ -1,0 +1,252 @@
+header{
+    margin-bottom: 30px;
+    .header_top{
+        padding: 15px 0;
+    
+        .work_time{
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            color: $secondFontColor;
+            font-weight: 400;
+
+            span{
+                font-weight: 500;
+                margin-right: 3px;
+            }
+
+            img{
+                margin-right: 15px;
+
+            }
+        }
+
+        .location{
+            display: flex;
+            align-items: center;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 17px;
+            justify-content: flex-end;
+
+            span{
+                a{
+                    color: #4680ff;
+                    text-decoration: none;
+                    border-bottom: 1px Solid rgba(88, 152, 248, 0.2)
+                }
+            }
+
+            img{
+                margin-right: 15px;
+            }
+        }
+    }
+
+    .header_middle{
+        background-color: $bgWhite;
+        padding: 27px 0;
+
+        .header_logo{
+            img{
+                max-width: 100%;
+            }
+        }
+        form{
+            position: relative;
+            .form-control{
+                height: 47px;
+                border: 1px solid rgba(219, 224, 237, 1);
+                border-radius: 4px;
+            }
+
+            button{
+                border: none;
+                background-color: transparent;
+                position: absolute;
+                right: 15px;
+                top: 0;
+                bottom: 0;
+            }
+        }
+    }
+
+    .header_contacts{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .phone{
+            a{
+                display: flex;
+                align-items: center;
+                font-weight: 500;
+                font-size: 17px;
+                line-height: 20px;
+                color: $mainFontColor;
+                text-decoration: none;
+
+                img{
+                    margin-right: 13px;
+                }
+            }
+        }
+        .cart{
+            position: relative;
+            .product_count{
+                position: absolute;
+                font-weight: 500;
+                font-size: 9px;
+                line-height: 11px;
+                height: 16px;
+                width: 16px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: #f55858;
+                border-radius: 2px;
+                color: #fff;
+                right: -7px;
+                top: -6px;
+            }
+
+            a{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 46px;
+                width: 46px;
+                border: 1px solid #dbe0ed;
+                border-radius: 4px;
+            }
+        }
+    }
+    
+    .header_bottom{
+        background-color: #fff;
+        box-shadow: 0px 8px 22px rgba(70, 128, 255, 0.16);
+
+        .catolog{
+            position: relative;
+            background-image: url("../img/catalog_item.svg");
+            background-repeat: no-repeat;
+            background-position: 30px center;
+            background-color: #f5f7fa;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+
+            & > a{
+                display: block;
+                padding: 30px 0 30px 80px;
+                color: $mainFontColor;
+                text-decoration: none;
+            }
+            ul{
+                position: absolute;
+                left: 0;
+                top: 79px;
+                width: 261px;
+                background: #fff;
+                box-shadow: 0px 8px 22px rgba(70, 128, 255, 0.16);
+                border-radius: 0px 0px 10px 10px;
+                padding: 0;
+                list-style: none;
+                transform: translateY(30px );
+                transition: .3s all ease;
+                opacity: 0;
+                visibility: hidden;
+                padding-bottom: 9px;
+                li{
+                    border-bottom: 1px solid #f5f7fa;
+                    a{
+                        display: block;
+                        padding: 15px 0 15px 30px;
+                        font-weight: 500;
+                        line-height: 19px;
+                        color: $mainFontColor;
+                        text-decoration: none;
+
+                        &.open_more{
+                            background: #4680ff;
+                            height: 35px;
+                            width: 35px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            padding: 0;
+                            position: absolute;
+                            left: 0;
+                            right: 0;
+                            margin: auto;
+                            bottom: -17px;
+                            border-radius: 50%;
+                        }
+                    }
+                    &:last-child{
+                        border-bottom: none;
+                    }
+                    &:nth-last-child(2){
+                        opacity: .5;
+                    }
+                }
+            }
+
+            &:hover{
+                ul{     
+                transform: translateY(0);  
+                opacity: 1;
+                visibility: visible;
+                
+               }
+            }
+        }
+        nav{
+            ul{
+                list-style: none;
+                li{
+                    margin: 0 50px;
+
+                    a{
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 19px;
+                        color: $mainFontColor;
+                        text-decoration: none;
+                        position: relative;
+
+                        &::before,
+                        &::after{
+                            content: '';
+                            display: block;
+                            height: 3px;
+                            width: 0;
+                            background-color: #4680ff;
+                            position: absolute;
+                            bottom: -9px;
+                            transform: scale(0.8);
+                            transition: .3s all ease;
+                        }
+
+                        &::before{
+                            left: 0;
+                        }
+
+                        &::after{
+                            right: 0;
+                        }
+                        
+                        &:hover{
+                            &::before,&::after{
+                                width: 50%;
+                                transform: scale(1);
+                                transition: .3s all ease;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,85 @@
+.main_slider{
+    margin-bottom: 40px;
+    .slider_item{
+        background: #fff;
+        box-shadow: 0px 8px 22px rgba(70, 128, 255, 0.16);
+        border-radius: 10px;
+        padding: 60px;
+
+        .big_title{
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 48px;
+            position: relative;
+            margin-bottom: 25px;
+
+            span{
+                font-weight: 400;
+
+                &.sale_percent{
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 21px;
+                    height: 30px;
+                    width: 67px;
+                    display: flex;
+                    background: #6fcf97;
+                    border-radius: 4px;
+                    color: #fff;
+                    position: absolute;
+                    justify-content: center;
+                    align-items: center;
+                    top: 65px;
+                    left: 230px;
+                }
+            }
+        }
+
+        .description{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            color: #626474;
+            margin-bottom: 40px;
+        }
+
+        .slider_action{
+            display: flex;
+
+            .action_bottom{
+                margin-bottom: 30px;
+                margin-right: 30px;
+                a{
+                    display: inline-block;
+                    padding: 15px 110px 15px 30px;
+                    background: #f55858;
+                    border-radius: 4px;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: #fff;
+                    text-decoration: none;
+                    background-image: url(../img/btn-arrow.svg);
+                    background-repeat: no-repeat;
+                    background-position: calc(100% - 11px) center;
+                }
+            }
+
+            .slider_pricees{
+                .old_price{
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: #F55858;
+                    margin-bottom: 5px;
+                }
+                .new_price{
+                    font-weight: 500;
+                    font-size: 36px;
+                    line-height: 20px;
+                    color: $mainFontColor;
+                }
+            }
+        }
+    }
+}

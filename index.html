@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Rubik:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style/main.css">
+    <title>API MARKET</title>
+
+</head>
+<body>
+    <div class="wrapper">
+
+        <header>
+            <div class="header_top">
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <div class="col-lg-4">
+                            <div class="work_time">
+                                <img src="images/worktime.svg" alt="">
+                                <span>Время работы:</span> Ежедневно, 24/7
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="location">
+                                <img src="images/marker.svg" alt="">
+                                <span>
+                                    Ваш город: <a href="#">Санкт-Петербург</a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header_middle">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-2">
+                            <div class="header_logo">
+                                <a href="#">
+                                    <img src="images/header_logo.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <form action="">
+                                <input type="text" name="seacher" placeholder="Поиск товара" class="form-control">
+                                <button>
+                                    <img src="images/search.svg" alt="">
+                                </button>
+                            </form>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="header_contacts">
+                                <div class="phone">
+                                    <a href="tel:88009557505">
+                                        <img src="images/phone.svg" alt="">8-800-955-75-05
+                                    </a>
+                                </div>
+                                <div class="cart">
+                                    <div class="product_count">2</div>
+                                    <a href="#">
+                                        <img src="images/card.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header_bottom">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-3">
+                            <div class="catolog">
+                                <a href="#">Каталог товаров</a>
+                                <ul class="caalog_item">
+                                    <li><a href="#">Оптика</a></li>
+                                    <li><a href="#">Антибиотики</a></li>
+                                    <li><a href="#">Медикаменты</a></li>
+                                    <li><a href="#">Бад и витамины</a></li>
+                                    <li><a href="#">Косметика и гигиена</a></li>
+                                    <li><a href="#">Спортивное питание</a></li>
+                                    <li><a href="#">Медицинские товары</a></li>
+                                    <li><a href="#">Товары для мам и детей</a></li>
+                                    <li><a href="#">Товары для косметологов</a></li>
+                                    <li>
+                                        <a href="#" class="open_more">
+                                           <img src="images/catalog_item.svg" alt="">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <din class="col-lg-9">
+                            <nav>
+                                <ul class="d-flex">
+                                    <li><a href="#">Акции</a></li>
+                                    <li><a href="#">Отзывы</a></li>
+                                    <li><a href="#">Доставка и оплата</a></li>
+                                    <li><a href="#">Контакты</a></li>
+                                </ul>
+                            </nav>
+                        </din>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="main_slider">
+            <div class="container">
+                <div class="slider_item">
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <h2 class="big_title">
+                                Варилон ультра<span> от варикоза</span>
+                                <span class="sale_percent">-50%</span>
+                            </h2>
+                            <p class="description">Варилон Ультра – инновационное средство, применяющееся при лечении варикозного расширения вен. Имеет комбинированный натуральный состав, оказывает быстрое и продолжительное терапевтическое действие.</p>
+                            <div class="slider_action">
+                                <div class="action_bottom">
+                                    <a href="#">Перейти</a>
+                                </div>
+                                <div class="slider_pricees">
+                                    <div class="old_price">1940 руб.</div>
+                                    <div class="new_price">970 руб.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <img src="images/slider_product.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="products sale">
+            <div class="container">
+                <div class="section_title"><img src="images/heart_outline.svg" alt="">Акционные товары</div>
+                <div class="row">
+
+                    <div class="col-lg-3">
+                        <div class="product_item">
+                            <div class="product_images">                                
+                                <a href="#">
+                                    <img src="images/product1.jpg" alt="">
+                                </a>
+
+                            </div>
+
+                            <div class="product_info">
+                                <a href="#" class="product_name">EsonStyle (ЕсонСтайл) - фитнес резинки</a>
+                                <p class="product_description">Гимнастический набор из 5 широких фитнес резинок. Каждая из них имеет собственную степень жёсткости,...</p>
+                            </div>
+
+                            <div class="product_action">
+                                <div class="product_price">
+                                    <div class="new_price">41 108 ₽</div>
+                                    <div class="old_price">49 999 ₽</div>
+                                </div>
+
+                                <div class="add_to_cart">
+                                        <a href="#">
+                                            <img src="images/cart.svg" alt="">
+                                        </a>
+                                    </div>
+
+                            </div>
+                        </div>
+                    </div>
+                 
+                    <div class="col-lg-3">
+                        <div class="product_item">
+                            <div class="product_images">                                
+                                <a href="#">
+                                    <img src="images/product2.jpg" alt="">
+                                </a>
+
+                            </div>
+
+                            <div class="product_info">
+                                <a href="#" class="product_name">EsonStyle (ЕсонСтайл) - фитнес резинки</a>
+                                <p class="product_description">Гимнастический набор из 5 широких фитнес резинок. Каждая из них имеет собственную степень жёсткости,...</p>
+                            </div>
+
+                            <div class="product_action">
+                                <div class="product_price">
+                                    <div class="new_price">41 108 ₽</div>
+                                    <div class="old_price">49 999 ₽</div>
+                                </div>
+
+                                <div class="add_to_cart">
+                                        <a href="#">
+                                            <img src="images/cart.svg" alt="">
+                                        </a>
+                                    </div>
+
+                            </div>
+                        </div>
+                    </div>
+                 
+                    <div class="col-lg-3">
+                        <div class="product_item">
+                            <div class="product_images">                                
+                                <a href="#">
+                                    <img src="images/product3.jpg" alt="">
+                                </a>
+
+                            </div>
+
+                            <div class="product_info">
+                                <a href="#" class="product_name">EsonStyle (ЕсонСтайл) - фитнес резинки</a>
+                                <p class="product_description">Гимнастический набор из 5 широких фитнес резинок. Каждая из них имеет собственную степень жёсткости,...</p>
+                            </div>
+
+                            <div class="product_action">
+                                <div class="product_price">
+                                    <div class="new_price">41 108 ₽</div>
+                                    <div class="old_price">49 999 ₽</div>
+                                </div>
+
+                                <div class="add_to_cart">
+                                        <a href="#">
+                                            <img src="images/cart.svg" alt="">
+                                        </a>
+                                    </div>
+
+                            </div>
+                        </div>
+                    </div>
+                 
+                    <div class="col-lg-3">
+                        <div class="product_item">
+                            <div class="product_images">                                
+                                <a href="#">
+                                    <img src="images/product4.jpg" alt="">
+                                </a>
+                            </div>
+
+                            <div class="product_info">
+                                <a href="#" class="product_name">EsonStyle (ЕсонСтайл) - фитнес резинки</a>
+                                <p class="product_description">Гимнастический набор из 5 широких фитнес резинок. Каждая из них имеет собственную степень жёсткости,...</p>
+                            </div>
+
+                            <div class="product_action">
+                                <div class="product_price">
+                                    <div class="new_price">41 108 ₽</div>
+                                    <div class="old_price">49 999 ₽</div>
+                                </div>
+
+                                <div class="add_to_cart">
+                                        <a href="#">
+                                            <img src="images/cart.svg" alt="">
+                                        </a>
+                                    </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+         </section>
+
+        <section class="products sale">
+                <div class="container">
+                    <div class="section_title"><img src="images/command.svg" alt="">Интересные статьи</div>
+                    <div class="row">
+    
+                        <div class="col-lg-6">
+                            <div class="product_item">
+                                <div class="product_images">
+                                    <a href="#">
+                                        <img src="images/interesting_ brand.jpg" alt="">
+                                    </a>
+                                </div>
+    
+                                <div class="product_info">
+                                    <a href="#" class="product_name">Горячая вода — секрет вечной молодости</a>
+                                    <p class="product_description">Человеческий организм на 75 – 80% состоит из воды. Она продлевает жизнь и восстанавливает здоровье. При обезвоживании сгущается кровь, нарушаются обменные процессы, снижается тонус кожи и мышечная упругость. Европейские диетологи, чтобы похудеть, рекомендуют пить перед едой холодную воду.</p>
+                                </div>
+                            </div>
+                        </div>
+                     
+                        <div class="col-lg-6">
+                            <div class="product_item">
+                                <div class="product_images">
+                                    <a href="#">
+                                        <img src="images/interesting_ brand_last.jpg" alt="">
+                                    </a>
+                                </div>
+    
+                                <div class="product_info">
+                                    <a href="#" class="product_name">Горячая вода — секрет вечной молодости</a>
+                                    <p class="product_description">Человеческий организм на 75 – 80% состоит из воды. Она продлевает жизнь и восстанавливает здоровье. При обезвоживании сгущается кровь, нарушаются обменные процессы, снижается тонус кожи и мышечная упругость. Европейские диетологи, чтобы похудеть, рекомендуют пить перед едой холодную воду.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+        </section>
+        <section class="products sale">
+            <div class="container">
+                <div class="section_title"><img src="images/heart_outline.svg" alt="">Акционные товары</div>
+                <div class="row">
+
+                    <div class="col-lg-3">
+                        <div class="product_item">
+                            <div class="product_images">                                
+                                <a href="#">
+                                    <img src="images/product1.jpg" alt="">
+                                </a>
+
+                            </div>
+
+                            <div class="product_info">
+                                <a href="#" class="product_name">EsonStyle (ЕсонСтайл) - фитнес резинки</a>
+                                <p class="product_description">Гимнастический набор из 5 широких фитнес резинок. Каждая из них имеет собственную степень жёсткости,...</p>
+                            </div>
+
+                            <div class="product_action">
+                                <div class="product_price">
+                                    <div class="new_price">41 108 ₽</div>
+                                    <div class="old_price">49 999 ₽</div>
+                                </div>
+
+                                <div class="add_to_cart">
+                                        <a href="#">
+                                            <img src="images/cart.svg" alt="">
+                                        </a>
+                                    </div>
+
+                            </div>
+                        </div>
+                    </div>
+                 
+                    <div class="col-lg-3">
+                        <div class="product_item">
+                            <div class="product_images">                                
+                                <a href="#">
+                                    <img src="images/product2.jpg" alt="">
+                                </a>
+
+                            </div>
+
+                            <div class="product_info">
+                                <a href="#" class="product_name">EsonStyle (ЕсонСтайл) - фитнес резинки</a>
+                                <p class="product_description">Гимнастический набор из 5 широких фитнес резинок. Каждая из них имеет собственную степень жёсткости,...</p>
+                            </div>
+
+                            <div class="product_action">
+                                <div class="product_price">
+                                    <div class="new_price">41 108 ₽</div>
+                                    <div class="old_price">49 999 ₽</div>
+                                </div>
+
+                                <div class="add_to_cart">
+                                        <a href="#">
+                                            <img src="images/cart.svg" alt="">
+                                        </a>
+                                    </div>
+
+                            </div>
+                        </div>
+                    </div>
+                 
+                    <div class="col-lg-3">
+                        <div class="product_item">
+                            <div class="product_images">                                
+                                <a href="#">
+                                    <img src="images/product3.jpg" alt="">
+                                </a>
+
+                            </div>
+
+                            <div class="product_info">
+                                <a href="#" class="product_name">EsonStyle (ЕсонСтайл) - фитнес резинки</a>
+                                <p class="product_description">Гимнастический набор из 5 широких фитнес резинок. Каждая из них имеет собственную степень жёсткости,...</p>
+                            </div>
+
+                            <div class="product_action">
+                                <div class="product_price">
+                                    <div class="new_price">41 108 ₽</div>
+                                    <div class="old_price">49 999 ₽</div>
+                                </div>
+
+                                <div class="add_to_cart">
+                                        <a href="#">
+                                            <img src="images/cart.svg" alt="">
+                                        </a>
+                                    </div>
+
+                            </div>
+                        </div>
+                    </div>
+                 
+                    <div class="col-lg-3">
+                        <div class="product_item">
+                            <div class="product_images">                                
+                                <a href="#">
+                                    <img src="images/product4.jpg" alt="">
+                                </a>
+                            </div>
+
+                            <div class="product_info">
+                                <a href="#" class="product_name">EsonStyle (ЕсонСтайл) - фитнес резинки</a>
+                                <p class="product_description">Гимнастический набор из 5 широких фитнес резинок. Каждая из них имеет собственную степень жёсткости,...</p>
+                            </div>
+
+                            <div class="product_action">
+                                <div class="product_price">
+                                    <div class="new_price">41 108 ₽</div>
+                                    <div class="old_price">49 999 ₽</div>
+                                </div>
+
+                                <div class="add_to_cart">
+                                        <a href="#">
+                                            <img src="images/cart.svg" alt="">
+                                        </a>
+                                    </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+         </section>
+        <section class="products top">
+            <section class="products sale">
+                <div class="container">
+                    <div class="section_title"><img src="images/heart_outline.svg" alt="">Акционные товары</div>
+                    <div class="row">
+    
+                        <div class="col-lg-3">
+                            <div class="product_item">
+                                <div class="product_images">                                
+                                    <a href="#">
+                                        <img src="images/product1.jpg" alt="">
+                                    </a>
+    
+                                </div>
+    
+                                <div class="product_info">
+                                    <a href="#" class="product_name">EsonStyle (ЕсонСтайл) - фитнес резинки</a>
+                                    <p class="product_description">Гимнастический набор из 5 широких фитнес резинок. Каждая из них имеет собственную степень жёсткости,...</p>
+                                </div>
+    
+                                <div class="product_action">
+                                    <div class="product_price">
+                                        <div class="new_price">41 108 ₽</div>
+                                        <div class="old_price">49 999 ₽</div>
+                                    </div>
+    
+                                    <div class="add_to_cart">
+                                            <a href="#">
+                                                <img src="images/cart.svg" alt="">
+                                            </a>
+                                        </div>
+    
+                                </div>
+                            </div>
+                        </div>
+                     
+                        <div class="col-lg-3">
+                            <div class="product_item">
+                                <div class="product_images">                                
+                                    <a href="#">
+                                        <img src="images/product2.jpg" alt="">
+                                    </a>
+    
+                                </div>
+    
+                                <div class="product_info">
+                                    <a href="#" class="product_name">EsonStyle (ЕсонСтайл) - фитнес резинки</a>
+                                    <p class="product_description">Гимнастический набор из 5 широких фитнес резинок. Каждая из них имеет собственную степень жёсткости,...</p>
+                                </div>
+    
+                                <div class="product_action">
+                                    <div class="product_price">
+                                        <div class="new_price">41 108 ₽</div>
+                                        <div class="old_price">49 999 ₽</div>
+                                    </div>
+    
+                                    <div class="add_to_cart">
+                                            <a href="#">
+                                                <img src="images/cart.svg" alt="">
+                                            </a>
+                                        </div>
+    
+                                </div>
+                            </div>
+                        </div>
+                     
+                        <div class="col-lg-3">
+                            <div class="product_item">
+                                <div class="product_images">                                
+                                    <a href="#">
+                                        <img src="images/product3.jpg" alt="">
+                                    </a>
+    
+                                </div>
+    
+                                <div class="product_info">
+                                    <a href="#" class="product_name">EsonStyle (ЕсонСтайл) - фитнес резинки</a>
+                                    <p class="product_description">Гимнастический набор из 5 широких фитнес резинок. Каждая из них имеет собственную степень жёсткости,...</p>
+                                </div>
+    
+                                <div class="product_action">
+                                    <div class="product_price">
+                                        <div class="new_price">41 108 ₽</div>
+                                        <div class="old_price">49 999 ₽</div>
+                                    </div>
+    
+                                    <div class="add_to_cart">
+                                            <a href="#">
+                                                <img src="images/cart.svg" alt="">
+                                            </a>
+                                        </div>
+    
+                                </div>
+                            </div>
+                        </div>
+                     
+                        <div class="col-lg-3">
+                            <div class="product_item">
+                                <div class="product_images">                                
+                                    <a href="#">
+                                        <img src="images/product4.jpg" alt="">
+                                    </a>
+                                </div>
+    
+                                <div class="product_info">
+                                    <a href="#" class="product_name">EsonStyle (ЕсонСтайл) - фитнес резинки</a>
+                                    <p class="product_description">Гимнастический набор из 5 широких фитнес резинок. Каждая из них имеет собственную степень жёсткости,...</p>
+                                </div>
+    
+                                <div class="product_action">
+                                    <div class="product_price">
+                                        <div class="new_price">41 108 ₽</div>
+                                        <div class="old_price">49 999 ₽</div>
+                                    </div>
+    
+                                    <div class="add_to_cart">
+                                            <a href="#">
+                                                <img src="images/cart.svg" alt="">
+                                            </a>
+                                        </div>
+    
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+             </section>
+        </section>
+
+        <section class="about_info">
+        </section>
+        <section class="comments"></section>
+
+        <section class="footer_contacts"></section>
+
+        <footer></footer>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
+
+</body>
+</html>
